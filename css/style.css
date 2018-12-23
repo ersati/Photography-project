@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Header*/
+
+.logo {
+    margin: 10px;
+    display: block;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+/*Navigation*/
+nav {
+    display: block;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav ul {
+
+
+    list-style: none;
+}
+
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+
+}
+
+
+nav li a {
+
+    font-size: 16px;
+    color: #AAA;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 2px solid #DDD;
+    font-family: arial, sans-serif;
+    padding-right: 15px
+}
+
+li:nth-of-type(4) a {
+    border: none;
+}
+
+nav li a:hover {
+    color: black;
+}
+
+div.photo {
+    display: block;
+    min-height: 500px;
+    border: 1px solid #DDD;
+
+    max-width: 800px;
+    margin: 0px auto;
+    margin-top: 30px
+}
+
+h1 {
+    margin: 35px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+
+}
+
+div img {
+    padding: 20px 35px;
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    height: auto;
+}
+
+/*div.photo {
+    width: 800px;
+    background-image: url('/img/photo1.jpg');
+    height: 400px;
+
+}*/
+
+@media (orientation: landscape) and (min-width: 532px) {
+    .logo {
+        width: 22vw;
+
+    }
+
+}
+
+@media (orientation:portrait) and (min-width: 320px) {
+    .logo {
+        margin: 0 auto;
+        width: 25vw;
+
+    }
+
+    nav li a {
+
+
+        border: none;
+    }
+}
