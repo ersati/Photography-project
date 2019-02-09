@@ -30,6 +30,10 @@
             setTimeout("changeslide()", 4000);
             setTimeout("hide()", 3500);
         }
+
+        $('.scrollup').click(function () {
+            $.scrollTo($('body'), 1000)
+        });
     </script>
 
 
@@ -56,6 +60,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <a href="#" class="scrollup"><i class="fas fa-angle-up"></i></a>
         <div class="wrapper">
             <section class="ph">
                 <h1>studio photography</h1>
