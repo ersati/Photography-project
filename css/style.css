@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merienda', cursive, arial, sans-serif;
 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.wrapper {
+
+
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /*Header*/
@@ -10,7 +28,7 @@
 .logo {
     margin: 10px;
     display: block;
-    width: 50vw;
+    width: 30vw;
     margin-left: auto;
     margin-right: auto;
 
@@ -19,21 +37,21 @@
 }
 
 /*Navigation*/
-nav {
+nav.desktop {
     display: block;
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 
-nav ul {
+nav.desktop ul {
 
 
     list-style: none;
 }
 
 
-nav li {
+nav.desktop li {
     display: inline-block;
     text-align: center;
     width: 120px;
@@ -41,14 +59,14 @@ nav li {
 }
 
 
-nav li a {
+nav.desktop li a {
 
     font-size: 16px;
-    color: #AAA;
+    color: #aaa;
     text-decoration: none;
     text-transform: uppercase;
-    border-right: 2px solid #DDD;
-    font-family: arial, sans-serif;
+    border-right: 2px solid #ddd;
+    font-family: 'Ubuntu', arial, sans-serif;
     padding-right: 15px
 }
 
@@ -60,57 +78,300 @@ nav li a:hover {
     color: black;
 }
 
-div.photo {
-    display: block;
-    min-height: 500px;
-    border: 1px solid #DDD;
-
-    max-width: 800px;
-    margin: 0px auto;
-    margin-top: 30px
+section {
+    border: 1px solid #ddd;
 }
 
-h1 {
+/*Section slider*/
+h1,
+h2 {
     margin: 35px 0 10px;
     text-align: center;
     text-transform: uppercase;
     color: #666;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+}
+
+section.ph {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+div.photo {
+    display: block;
+    height: 500px;
+    overflow: hidden;
+    /*    background-image: url("../img/ph1.jpg");*/
+    /*    width: 760px;*/
+    margin: 30px auto;
+
 
 }
 
-div img {
-    padding: 20px 35px;
-    margin: 0 auto;
+
+
+
+
+
+/*Section about me*/
+
+
+
+.aboutme h1 {
+    margin-bottom: 30px;
+}
+
+.aboutme p {
+    margin: 15px 10px;
+    color: #444;
+}
+
+/* section gallery*/
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h1 {
+    font-size: 2em;
+}
+
+div.photogallery {
+    height: 600px;
+    width: 390px;
+
+    float: left;
+
+}
+
+div.pone {
+    background-image: url("../img/portraits02.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.photogallery:hover {
+    background-size: 120%;
+    background-position: center;
+}
+
+div.ptwo {
+    background-image: url("../img/portraits05.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.ptree {
+    background-image: url("../img/portraits14.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.pfour {
+    background-image: url("../img/portraits15.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+main:nth-of-type(1) section {
+    margin-top: 20px;
+}
+
+div.pfive {
+    background-image: url("../img/portraits011.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.psix {
+    background-image: url("../img/portraits021.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.pseven {
+    background-image: url("../img/portraits25.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.peight {
+    background-image: url("../img/portraits23.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.pnine {
+    background-image: url("../img/portraits09.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.pten {
+    background-image: url("../img/portraits10.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.peleven {
+    background-image: url("../img/portraits22.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.ptwelve {
+    background-image: url("../img/portraits18.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.pthirteen {
+    background-image: url("../img/portraits07.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+div.pfourteen {
+    background-image: url("../img/portraits06.jpg");
+    margin: 10px 6px 0 3px;
+}
+
+
+/*section contact*/
+
+.contact {
+    margin-top: 20px;
+}
+
+span {
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #444;
+    font-size: 40px;
+    text-align: justify;
+
+}
+
+a:hover {
+    color: black;
+}
+
+div.contact {
+    margin: 40px 0;
+}
+
+/*footer*/
+
+footer {
+    height: 80px;
+    background-color: #bbb;
+    color: white;
     text-align: center;
-    width: 800px;
-    height: auto;
+    line-height: 80px;
+    font-size: 30px;
 }
 
-/*div.photo {
-    width: 800px;
-    background-image: url('/img/photo1.jpg');
+/* Price */
+
+.price {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px auto;
+    justify-content: space-around;
+
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: green; */
     height: 400px;
+    width: 350px;
+    border: #ddd 1px solid;
+    margin: 20px 10px;
+    font-family: 'Merienda', cursive, arial, sans-serif;
+}
 
-}*/
+span.cross {
+    text-decoration: line-through;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: normal;
+}
 
-@media (orientation: landscape) and (min-width: 532px) {
-    .logo {
-        width: 22vw;
+.offer div {
+    font-size: 40px;
+    font-weight: bold;
+}
 
-    }
+
+.offer:hover {
+
+    transform: scale(1.1);
 
 }
 
-@media (orientation:portrait) and (min-width: 320px) {
-    .logo {
+i.fa-check {
+    font-size: 20px;
+    color: #555;
+    /* font-family: arial, sans-serif; */
+}
+
+@media (max-width: 768px) {
+
+
+    .wrapper {
+        max-width: 700px;
+    }
+
+    nav {
+        max-width: 80%;
+    }
+
+    div.photo {
+        width: 80%;
+        height: 250px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    div.photo img {
+        width: 100%;
+    }
+
+    div.photogallery {
+        width: 300px;
+        height: 500px;
+        float: none;
         margin: 0 auto;
-        width: 25vw;
 
     }
 
-    nav li a {
-
-
-        border: none;
+    .price {
+        flex-wrap: wrap;
     }
+
+
+
+    .offer:hover {
+
+        transform: scale(1);
+
+    }
+
+
+}
+
+@media (max-width: 360px) {}
+
+.photogallery {
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+a {
+    font-size: 22px;
 }
