@@ -12,6 +12,7 @@
 
 - Solution URL: https://github.com/ersati/Photography-project
 - Live Site URL: https:/pacewiczphotography.co.uk
+- https://ersati.github.io/Photography-project/index.html
 
 #### Users should be able to:
 
